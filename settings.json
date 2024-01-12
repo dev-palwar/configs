@@ -29,45 +29,64 @@
             "keys": "alt+shift+d"
         }
     ],
+    "alwaysShowNotificationIcon": false,
+    "alwaysShowTabs": true,
+    "autoHideWindow": false,
+    "centerOnLaunch": true,
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+    "firstWindowPreference": "persistedWindowLayout",
+    "launchMode": "default",
+    "minimizeToNotificationArea": false,
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
     "profiles": 
     {
         "defaults": 
         {
             "backgroundImage": "D:\\Wallpapers\\wallpaperflare.com_wallpaper(2).jpg",
             "backgroundImageOpacity": 0.17,
+            "colorScheme": "One Half Dark",
             "cursorHeight": 17,
             "cursorShape": "vintage",
+            "elevate": false,
             "experimental.retroTerminalEffect": false,
             "font": 
             {
-                "size": 12,
-                "weight": "medium"
+                "cellHeight": "2",
+                "face": "Comic Sans MS",
+                "size": 12.0,
+                "weight": "semi-bold"
             },
-            "padding": "63"
-            // "useAcrylic": true
+            "icon": "D:\\Me\\AI\\_002c9a56-fe0e-4dfb-b567-58ec640cad51.jpg",
+            "padding": "63",
+            "scrollbarState": "hidden",
+            "startingDirectory": "D:\\Me",
+            "tabTitle": "Dev's terminal"
         },
         "list": 
         [
             {
+                "antialiasingMode": "cleartype",
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
-                "name": "Windows PowerShell"
+                "name": "Windows PowerShell",
+                "useAtlasEngine": true
             },
             {
                 "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "elevate": false,
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
-                "name": "Command Prompt"
-            },
-            {
-                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-                "hidden": false,
-                "name": "Azure Cloud Shell",
-                "source": "Windows.Terminal.Azure"
+                "icon": "C:\\Users\\DEV PALWAR\\Pictures\\37eda5e22ee8d1b9d84b4c252e45be1f.jpg",
+                "name": "Command Prompt",
+                "startingDirectory": null
             }
         ]
     },
@@ -280,5 +299,10 @@
             "white": "#C0C0C0",
             "yellow": "#808000"
         }
-    ]
+    ],
+    "showTabsInTitlebar": true,
+    "startOnUserLogin": true,
+    "tabWidthMode": "equal",
+    "themes": [],
+    "useAcrylicInTabRow": false
 }
