@@ -1,4 +1,7 @@
 Clear-Host
+
+Import-Module -Name Terminal-Icons
+
 oh-my-posh init pwsh --config 'D:\Me\posh-configs\themes\shell.json' | Invoke-Expression
 
 function Open {

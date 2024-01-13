@@ -49,25 +49,28 @@
     {
         "defaults": 
         {
-            "backgroundImage": "D:\\Wallpapers\\wallpaperflare.com_wallpaper(2).jpg",
-            "backgroundImageOpacity": 0.17,
+            "adjustIndistinguishableColors": "never",
+            "backgroundImage": "D:\\Wallpapers\\83.png",
+            "backgroundImageOpacity": 0.15,
             "colorScheme": "Bright Lights",
-            "cursorHeight": 17,
+            "cursorHeight": 5,
             "cursorShape": "vintage",
             "elevate": false,
             "experimental.retroTerminalEffect": false,
             "font": 
             {
                 "cellHeight": "2",
-                "face": "ComicShannsMono Nerd Font Mono",
+                "face": "ComicShannsMono Nerd Font",
                 "size": 12.0,
-                "weight": "semi-bold"
+                "weight": "thin"
             },
             "icon": "D:\\Me\\AI\\_002c9a56-fe0e-4dfb-b567-58ec640cad51.jpg",
+            "opacity": 100,
             "padding": "63",
             "scrollbarState": "hidden",
             "startingDirectory": "D:\\Me",
-            "tabTitle": "Dev's terminal"
+            "tabTitle": "Dev's terminal",
+            "useAcrylic": false
         },
         "list": 
         [
