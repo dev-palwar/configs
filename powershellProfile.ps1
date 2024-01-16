@@ -2,6 +2,10 @@ Clear-Host
 
 Import-Module -Name Terminal-Icons
 
+Set-PSReadLineOption -PredictionSource History
+Set-PSReadLineOption -PredictionViewStyle ListView
+Set-PSReadLineOption -EditMode Windows
+
 oh-my-posh init pwsh --config 'D:\Me\posh-configs\themes\shell.json' | Invoke-Expression
 
 function Open {

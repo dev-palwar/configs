@@ -67,6 +67,8 @@ Install-Module -Name Terminal-Icons -Repository PSGallery
 ### Install PSReadLine for Intellisense
 
 ```powershell
+Install-Module PSReadLine -AllowPrerelease -Force
+
 Install-Module -Name PSReadLine -Force
 
 ```
