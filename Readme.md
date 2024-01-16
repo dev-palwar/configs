@@ -15,7 +15,7 @@
 
 ## Install oh-my-posh
 
-In your terminal, execute these commands
+In your terminal, execute these commands one by one
 
 ```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force
@@ -92,5 +92,6 @@ cd $Env:UserProfile\\AppData\\Local\\Microsoft\\Windows\\Fonts
 oh-my-posh font install
 
 ```
+After installation they’ll be available in the Default > appearance in the settings.
 
-Your terminal setup is now ready! Reload your terminal, and enjoy the enhanced and visually appealing environment. Customize further as per your preferences.
+With this your terminal setup is now ready! Reload your terminal, and enjoy the enhanced and visually appealing environment. Customize further as per your preferences.
