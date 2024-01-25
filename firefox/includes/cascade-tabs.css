@@ -11,9 +11,9 @@
 
 
 /* remove tab shadow */
-.tabbrowser-tab>.tab-stack>.tab-background {
+/* .tabbrowser-tab>.tab-stack>.tab-background {
   box-shadow: none !important;
-}
+} */
 
 
 /* multi tab selection */
@@ -39,9 +39,9 @@
 
 
 /* adaptive tab width */
-.tabbrowser-tab[selected][fadein]:not([pinned]) {
+/* .tabbrowser-tab[selected][fadein]:not([pinned]) {
   max-width: var(--uc-active-tab-width) !important;
-}
+} */
 
 .tabbrowser-tab[fadein]:not([selected]):not([pinned]) {
   max-width: var(--uc-inactive-tab-width) !important;
