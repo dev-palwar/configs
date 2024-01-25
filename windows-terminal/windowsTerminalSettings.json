@@ -50,8 +50,10 @@
         "defaults": 
         {
             "adjustIndistinguishableColors": "never",
-            "backgroundImage": "D:\\Wallpapers\\83.png",
-            "backgroundImageOpacity": 0.15,
+            "backgroundImage": "C:\\Users\\DEV PALWAR\\Desktop\\xNmzL9d.png",
+            "backgroundImageStretchMode": "none",
+            "backgroundImageAlignment": "bottomRight",
+            "backgroundImageOpacity": 0.90,
             "colorScheme": "Bright Lights",
             "cursorHeight": 5,
             "cursorShape": "vintage",
@@ -65,12 +67,12 @@
                 "weight": "thin"
             },
             "icon": "D:\\Me\\AI\\_002c9a56-fe0e-4dfb-b567-58ec640cad51.jpg",
-            "opacity": 100,
+            "opacity": 94,
             "padding": "63",
             "scrollbarState": "hidden",
             "startingDirectory": "D:\\Me",
             "tabTitle": "Dev's terminal",
-            "useAcrylic": false
+            "useAcrylic": true
         },
         "list": 
         [
@@ -330,5 +332,6 @@
     "startOnUserLogin": true,
     "tabWidthMode": "equal",
     "themes": [],
-    "useAcrylicInTabRow": false
+    "useAcrylicInTabRow": false,
+    "windowingBehavior": "useAnyExisting"
 }
