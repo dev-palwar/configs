@@ -1,24 +1,46 @@
 @-moz-document url(about:home), url(about:newtab), url(about:privatebrowsing){
 
-.click-target-container *,
-.top-sites-list * {
-    color: #fff !important;
-    text-shadow: 2px 2px 2px #222 !important;
-}
 
-.search-inner-wrapper{
-    display: none !important;
-}
-
-body::before {
-    content: "";
-    z-index: -1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: #f9a no-repeat url('https://i.pinimg.com/originals/80/1d/26/801d266ecbac22c4788f62ef182cc241.jpg') center;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-}
-}
+    html::-webkit-scrollbar {
+        display: none;
+    }
+    
+    html {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    
+    .click-target-container *,
+    .top-sites-list * {
+        color: #fff !important;
+        text-shadow: 2px 2px 2px #222 !important;
+    }
+    
+    
+    body {
+        border-radius: 10px;
+        margin: 0;
+        height: 90vh;
+        border: 2px solid !important;
+    }
+    
+    .search-inner-wrapper {
+        display: none !important;
+    }
+    
+    
+    /* background image in the bottom right corner  */
+    
+    body::before {
+        content: "";
+        z-index: -1;
+        background: no-repeat url('https://static.vecteezy.com/system/resources/previews/024/212/227/original/ai-generated-sticker-smiling-anime-girl-png.png') center;
+        background-size: auto;
+        background-size: cover;
+        width: 20vw;
+        height: 45vh;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    }
