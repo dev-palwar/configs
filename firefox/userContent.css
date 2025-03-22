@@ -1,46 +1,23 @@
-@-moz-document url(about:home), url(about:newtab), url(about:privatebrowsing){
+/* Background image new tab page */
 
+@-moz-document url(about:newtab), url(about:home){
+.outer-wrapper {
+    background-image: url("https://wallshub.com/uploads/posts/2024-05/d678d19e52_satoru-gojo-jujutsu-kaisen-4k.webp") !important;
+    /* Image in chrome folder */
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    color: grey !important;
+    /* Text color */
+}
 
-    html::-webkit-scrollbar {
-        display: none;
-    }
-    
-    html {
-        scrollbar-width: none;
-        -ms-overflow-style: none;
-    }
-    
-    .click-target-container *,
-    .top-sites-list * {
-        color: #fff !important;
-        text-shadow: 2px 2px 2px #222 !important;
-    }
-    
-    
-    body {
-        border-radius: 10px;
-        margin: 0;
-        height: 90vh;
-        border: 2px solid !important;
-    }
-    
-    .search-inner-wrapper {
-        display: none !important;
-    }
-    
-    
-    /* background image in the bottom right corner  */
-    
-    body::before {
-        content: "";
-        z-index: -1;
-        background: no-repeat url('https://static.vecteezy.com/system/resources/previews/024/212/227/original/ai-generated-sticker-smiling-anime-girl-png.png') center;
-        background-size: auto;
-        background-size: cover;
-        width: 20vw;
-        height: 45vh;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-    }
-    }
+.search-inner-wrapper {
+    display: none !important;
+}
+
+.non-collapsible-section {
+    position: absolute !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0rem !important;
+}
+}
