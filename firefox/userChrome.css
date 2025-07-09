@@ -19,9 +19,9 @@
 }
 
 /* Extensions button */
-#unified-extensions-button {
+/* #unified-extensions-button {
     display: none !important
-}
+} */
 
 /* Extension name inside URL bar */
 #identity-box.extensionPage #identity-icon-label {
@@ -156,7 +156,11 @@
 #PersonalToolbar {
     background-color: #0000 !important;
     background-image: none !important;
-    box-shadow: none !important
+    box-shadow: none !important;   
+}
+
+#PersonalToolbar {
+	display: none !important;
 }
 
 #nav-bar {
