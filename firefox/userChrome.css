@@ -156,11 +156,11 @@
 #PersonalToolbar {
     background-color: #0000 !important;
     background-image: none !important;
-    box-shadow: none !important;   
+    box-shadow: none !important;
 }
 
 #PersonalToolbar {
-	display: none !important;
+    display: none !important;
 }
 
 #nav-bar {

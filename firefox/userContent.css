@@ -2,12 +2,11 @@
 
 @-moz-document url(about:newtab), url(about:home){
 .outer-wrapper {
-    background-image: url("https://wallshub.com/uploads/posts/2024-05/d678d19e52_satoru-gojo-jujutsu-kaisen-4k.webp") !important;
-    /* Image in chrome folder */
+    /* The script will replace the timestamp dynamically */
+    background-image: url("images/cover.jpg") !important;
     background-size: cover !important;
     background-attachment: fixed !important;
     color: grey !important;
-    /* Text color */
 }
 
 .search-inner-wrapper {

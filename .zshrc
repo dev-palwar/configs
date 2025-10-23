@@ -1,3 +1,5 @@
+tmux
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -120,4 +122,26 @@ export PATH="$HOME/.cargo/bin:$PATH"
 #eval "$(starship init zsh)"
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.z/z.sh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+alias leeti-setup="~/launch-dev-env.sh"
+
+cat me/eyesascii.txt
+
+
+export PATH=$HOME/.local/bin:$PATH
+
+alias cover='node /home/devpalwar/me/configs/frmpntrstpcfrfxwlpprmkr/node-pntrst-wlppr-mkr/index.js'
+
+# bun completions
+[ -s "/home/devpalwar/.bun/_bun" ] && source "/home/devpalwar/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+
