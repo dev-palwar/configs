@@ -45,12 +45,9 @@
   "editor.formatOnSave": true,
   "workbench.iconTheme": "material-icon-theme",
   "window.customTitleBarVisibility": "auto",
-  "workbench.editor.editorActionsLocation": "hidden",
   "editor.stickyScroll.enabled": false,
   "window.menuBarVisibility": "toggle",
-  "workbench.layoutControl.enabled": false,
   "workbench.colorTheme": "React Theme",
-  // "editor.lineNumbers": "off",
   "editor.scrollbar.verticalScrollbarSize": 5,
   "editor.scrollbar.vertical": "hidden",
   "workbench.editor.showTabs": "none",
@@ -68,8 +65,6 @@
   "workbench.tree.enableStickyScroll": false,
   "explorer.compactFolders": false,
   "explorer.decorations.badges": false,
-  // "custom-ui-style.font.sansSerif": "Dank Mono",
-  // "breadcrumbs.enabled": false,
   "editor.guides.indentation": false,
   "custom-ui-style.stylesheet": {
     ".notification-toast": "box-shadow: none !important",
@@ -88,12 +83,26 @@
     ".monaco-editor .scroll-decoration": "display: none",
     ".title-actions": "display: none !important",
     ".title.show-file-icons .label-container .monaco-icon-label.file-icon": "justify-content: center; padding: 0 !important",
-    ".title .monaco-icon-label:after": "margin-right: 0"
+    ".title .monaco-icon-label:after": "margin-right: 0",
+    ".monaco-button": "border-radius: 2px !important",
+    ".monaco-inputbox": "border-radius: 2px !important",
+    ".monaco-menu": "border-radius: 2px !important",
+    ".context-view": "border-radius: 2px !important",
+    ".monaco-editor .suggest-widget": "border-radius: 2px !important",
+    ".monaco-hover": "border-radius: 2px !important",
+    ".monaco-dialog-box": "border-radius: 2px !important"
   },
   "editor.minimap.renderCharacters": false,
   "editor.minimap.maxColumn": 120,
   "editor.minimap.side": "right",
   "editor.minimap.enabled": true,
   "workbench.hover.delay": 5000,
-  "editor.hover.enabled": false
+  "cursor.composer.shouldChimeAfterChatFinishes": true,
+  "workbench.editor.editorActionsLocation": "hidden",
+  // "window.titleBarStyle": "native",
+  "workbench.colorCustomizations": {
+    "widget.shadow": "#00000000",
+    "scrollbar.shadow": "#00000000"
+  },
+  "workbench.layoutControl.enabled": false
 }
