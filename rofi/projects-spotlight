@@ -1,0 +1,68 @@
+#!/bin/bash
+
+fd_cmd=$(command -v fd || command -v fdfind)
+
+# 🗂 Pretty name → actual path mapping
+declare -A PROJECTS=(
+  ["Projects (Desktop)"]="$HOME/Desktop/projects"
+  ["Projects"]="$HOME/projects"
+  ["Documents"]="$HOME/Documents"
+)
+
+# Step 1: select project
+project_name=$(printf "%s\n" "${!PROJECTS[@]}" \
+  | sort \
+  | rofi -dmenu -i -no-cache -p "Select project")
+
+[ -z "$project_name" ] && exit 0
+project_path="${PROJECTS[$project_name]}"
+
+# Step 2: search files (absolute paths)
+files=$($fd_cmd . "$project_path" \
+  --type f \
+  --hidden \
+  --follow \
+  --exclude node_modules \
+  --exclude .git \
+  --exclude .cache \
+  --exclude .next \
+  --exclude '*.lock' \
+  --exclude '.gitignore' \
+  --exclude '.idea' \
+  --exclude '*.jpg' \
+  --exclude '*.jpeg' \
+  --exclude '*.png' \
+  --exclude '*.gif' \
+  --exclude '*.webp' \
+  --exclude '*.mp4' \
+  --exclude '*.mp3' \
+  --exclude '*.mov')
+
+# Step 3: show RELATIVE paths in rofi
+selection=$(printf "%s\n" "$files" \
+  | sed "s|^$project_path/||" \
+  | rofi -dmenu -i -no-cache -p "Search file")
+
+[ -z "$selection" ] && exit 0
+
+# Step 4: rebuild absolute path
+file="$project_path/$selection"
+
+# Step 5: action menu
+action=$(printf "Open in VS Code\nOpen folder in VS Code\nOpen normally\nCopy path" \
+  | rofi -dmenu -i -no-cache -p "Action")
+
+case "$action" in
+  "Open in VS Code")
+    code "$file"
+    ;;
+  "Open folder in VS Code")
+    code "$(dirname "$file")"
+    ;;
+  "Open normally")
+    xdg-open "$file"
+    ;;
+  "Copy path")
+    printf "%s" "$file" | xclip -selection clipboard
+    ;;
+esac
